@@ -1,0 +1,53 @@
+:root {
+	--search-c-bg: var(--vp-c-bg);
+	--search-c-accent: var(--vp-c-accent);
+	--search-c-text: var(--vp-c-text);
+	--search-c-border: var(--vp-c-gutter);
+	--search-c-item-text: var(--vp-c-text-subtle);
+	--search-c-item-focus: var(--vp-c-bg-alt);
+	--search-input-width: 8rem;
+	--search-result-width: 20rem;
+}
+
+// 在此处放置您的自定义样式
+::-webkit-scrollbar {
+	width: 5px;
+}
+::-webkit-scrollbar-track {
+	background-color: var(--vp-c-white);
+}
+::-webkit-scrollbar-thumb {
+	background-color: var(--vp-c-border);
+}
+.vp-sidebar {
+	border-right: unset;
+	scrollbar-color: unset;
+	scrollbar-width: unset;
+	&::-webkit-scrollbar {
+		width: 5px;
+	}
+	&::-webkit-scrollbar-track {
+		background-color: var(--vp-c-white);
+	}
+	&::-webkit-scrollbar-thumb {
+		background-color: var(--vp-c-border);
+	}
+}
+.vp-sidebar-item {
+	&.vp-sidebar-heading {
+		padding: 0.2rem 1.5rem 0.2rem 1.25rem;
+		font-size: 16px;
+	}
+	&:not(.vp-sidebar-heading) {
+		padding: 0.15rem 1rem 0.15rem 2rem;
+		font-size: 14px;
+	}
+}
+div[class*='language-']pre {
+	&::-webkit-scrollbar-track {
+		background-color: var(--code-c-bg);
+	}
+	&::-webkit-scrollbar-thumb {
+		background-color: var(--code-c-line-number, var(--code-c-text));
+	}
+}
